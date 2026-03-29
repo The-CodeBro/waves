@@ -17,16 +17,24 @@ html {
 }
 
 header {
-    position: sticky;
+    background-color: var(--primary-color--);
     width: 100%;
     font-family: "Montserrat", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
     padding: 2rem 5rem;
 }
 
-header a {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
     text-decoration: none;
 }
 
@@ -37,28 +45,28 @@ h1 {
     color: var(--purple-color--);
 }
 
-nav ul {
+.header nav ul {
     display: flex;
     align-items: center;
     gap: 5rem;
 }
 
-nav ul li {
+.header nav ul li {
     list-style: none;
 }
 
-nav ul li a {
+.header nav ul li a {
     color: #000;
     font-size: 1.8rem;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+.header nav ul li a:hover {
     color: var(--purple-color--);
 }
 
-nav ul li a:active {
+.header nav ul li a:active {
     opacity: 0.7;
 }
 
@@ -77,6 +85,14 @@ nav ul li a:active {
     font-weight: 500;
 }
 
+.contact-link:hover {
+    opacity: 0.9;
+}
+
+.contact-link:active {
+    opacity: 0.7;
+}
+
 .menu-btn {
     display: none;
     background: none;
@@ -88,36 +104,29 @@ nav ul li a:active {
 }
 
 .is-toggled {
-    display: flex;
-}
-
-.is-toggled-active {
-    background-color: var(--primary-color--);
-    position: fixed;
-    top: 0;
-    z-index: 100;
+    display: flex !important;
 }
 
 @media (max-width: 768px) {
     header {
-        padding: 1rem 1.5rem;
+        padding: 1rem;
     }
     h1 {
         font-size: 2rem;
     }
-    nav ul {
+    .header nav ul {
         display: none;
         width: 100%;
         flex-direction: column;
         background-color: var(--purple-color--);
         position: absolute;
-        top: 4.8rem;
+        top: 4.7rem;
         left: 0;
         padding-block: 2rem;
     }
     .home,
-    nav ul li a,
-    nav ul li a:hover {
+    .header nav ul li a,
+    .header nav ul li a:hover {
         color: var(--primary-color--);
     }
     .contact-link {
@@ -130,10 +139,11 @@ nav ul li a:active {
 }
 
 @media (min-width: 1400px) {
-    header,
-    main,
-    footer {
+    .header {
         max-width: 1200px;
         margin: auto;
+    }
+    header {
+        padding-inline: 0rem;
     }
 }
