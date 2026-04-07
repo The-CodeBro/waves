@@ -8,6 +8,8 @@ import {
     desktopView,
 } from "./menu.js";
 
+import copyRightYear from "./date.js";
+
 //mobile menu toggle and desktop nav view
 menuToggle(header);
 
@@ -24,3 +26,6 @@ window.addEventListener("resize", () => {
         desktopView();
     }
 });
+
+//footer copyright year
+copyRightYear();
