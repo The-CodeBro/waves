@@ -45,6 +45,7 @@ h1 {
 
 .header nav ul li a:hover {
     color: var(--purple-color--);
+    border-bottom: 2px solid var(--purple-color--);
 }
 
 .header nav ul li a:active {
@@ -88,18 +89,6 @@ h1 {
 .is-toggled {
     display: flex !important;
 }
-
-
-/* .link-desktop {
-    color: var(--purple-color--) !important;
-    border-bottom: 2px solid var(--purple-color--);
-} */
-
-
-/* .link-mobile {
-    color: var(--primary-color-) !important;
-    border-bottom: 2px solid var(--primary-color-) !important;
-} */
 
 .nav-link.active {
     color: var(--purple-color--);
