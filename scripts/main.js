@@ -3,17 +3,18 @@ import {
     header,
     navlinks,
     menuToggle,
-    activateCurrentPage,
+    indicateActivePage,
     mobileNavView,
     desktopView,
 } from "./menu.js";
 
+import preventReloadOnActiveFooterLink from "./footer.js";
 import copyRightYear from "./date.js";
 
 //mobile menu toggle and desktop nav view
 menuToggle(header);
 
-activateCurrentPage(navlinks);
+indicateActivePage(navlinks);
 
 desktopView();
 
@@ -26,6 +27,8 @@ window.addEventListener("resize", () => {
         desktopView();
     }
 });
+
+preventReloadOnActiveFooterLink();
 
 //footer copyright year
 copyRightYear();

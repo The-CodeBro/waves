@@ -40,7 +40,7 @@ export function closeMenu(menu, icon) {
     icon.innerHTML = ` <i class="fa-solid fa-bars fa-lg"></i>`;
 }
 
-export function activateCurrentPage(navlinks) {
+export function indicateActivePage(navlinks) {
     navlinks.forEach((link) => {
         const linkPath = new URL(link.href).pathname;
         const currentPagePath = window.location.pathname;
