@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waves | Contact Us</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Professional web development services by The Waves Web Agency. We create clean, modern, and responsive websites for your business."
+    />
+    <meta
+      name="keywords"
+      content="web development, portfolio, responsive websites, web design, front-end development"
+    />
+    <meta name="author" content="Waves Web Agency" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://yourwebsite.com/" />
+
+    <!-- Sytles and Icon Library -->
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css"
+      integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="The Waves Web Agency" />
+    <meta
+      property="og:description"
+      content="We create clean, modern, and responsive websites that elevate your brand and drive results."
+    />
+    <meta
+      property="og:image"
+      content="https://the-codebro.github.io/og-image-host/waves-og-preview.png"
+    />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter OG Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Waves Web Agency" />
+    <meta
+      name="twitter:description"
+      content="We create clean, modern, and responsive websites that elevate your brand and drive results."
+    />
+    <meta
+      name="twitter:image"
+      content="https://the-codebro.github.io/og-image-host/waves-og-preview.png"
+    />
+    <meta
+      name="twitter:site"
+      content="@the_code_bro
+"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <a href="../index.html">
+          <h1 class="company-name">Waves</h1>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="../index.html" class="home nav-link">Home</a></li>
+            <li>
+              <a href="./pages/contact.html" class="nav-link">About Us</a>
+            </li>
+            <li><a href="./new" class="nav-link">Blog</a></li>
+            <li>
+              <a href="../pages/services.html" class="nav-link">Services</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="./contact.html" class="js-contact-link contact-link nav-link">
+          Contact us
+          <img src="../icons/left-arrow.svg" alt="left-arrow-icon" />
+        </a>
+
+        <button class="menu-btn">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact">
+        <div class="contact-flex">
+          <h3>Interested? Let's talk!</h3>
+
+          <p>
+            Just fill this form and we will contact you promptly to discuss your
+            project. Hate forms? Drop us a message at
+            <span>
+              <a
+                href="mailto:hello@info@waves.com?subject=New%20Project%20Inquiry&body=Hi%20Waves%2C%0AI%20would%20like%20to%20build%20a%20website."
+              >
+                info@waves.com
+              </a>
+            </span>
+            or
+            <span>
+              <a
+                href="mailto:hello@hello@waves.com?subject=New%20Project%20Inquiry&body=Hi%20Waves%2C%0AI%20would%20like%20to%20build%20a%20website."
+              >
+                hello@waves.com
+              </a>
+            </span>
+          </p>
+
+          <form action="">
+            <div>
+              <label for="name"></label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+                required
+                data-input="name"
+              />
+              <div class="indicator"></div>
+            </div>
+
+            <div>
+              <label for="email"></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+                data-input="email"
+                class="mail"
+              />
+              <div class="indicator"></div>
+            </div>
+
+            <div>
+              <label for="project"></label>
+              <input
+                type="text"
+                name="project"
+                id="project"
+                placeholder="Tell Us About Your Project"
+                required
+                data-input="project-detail"
+              />
+
+              <div class="indicator"></div>
+            </div>
+
+            <label for="file-upload" class="custom-upload" title="Upload file">
+              <i class="fa-solid fa-link"></i>
+              <img src="../icons/Waves.svg" alt="waves-icon" />
+              Add Attachment</label
+            >
+            <input type="file" id="file-upload" />
+
+            <button type="submit">Send Request</button>
+
+            <div class="error-message"></div>
+          </form>
+        </div>
+
+        <!-- <div class="submit-message">
+          <div class="text">
+            <h3>
+              Dear, Salawu, your request has been sent! <br />
+              Thank you!
+            </h3>
+          </div>
+
+          <button>Close</button>
+        </div> -->
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <span class="wave" aria-hidden="true">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 60"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="
+            M0,30
+            C90,60 90,0  180,30
+            C270,60 270,0 360,30
+            C450,60 450,0 540,30
+            C630,60 630,0 720,30
+            C810,60 810,0 900,30
+            C990,60 990,0 1080,30
+            C1170,60 1170,0 1260,30
+            C1350,60 1350,0 1440,30
+            L1440,60 L0,60 Z
+          "
+              fill="#0d0d0d"
+            />
+          </svg>
+        </span>
+
+        <section class="footer-upper-container">
+          <div class="upper-container-flex">
+            <h3>Ready for your project</h3>
+            <a href="./contact.html" class="footer-link">Get in touch</a>
+          </div>
+        </section>
+
+        <section class="footer-bottom-container">
+          <section class="footer-nav">
+            <h3>Waves</h3>
+            <nav>
+              <ul>
+                <li>
+                  <a href="../index.html" class="footer-link">Home</a>
+                </li>
+
+                <li><a href="./index.html" class="footer-link">About us</a></li>
+
+                <li><a href="./index.html" class="footer-link">Blog</a></li>
+
+                <li>
+                  <a href="./services.html" class="footer-link">Services</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <section class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+            <a href="https://x.com/the_code_bro" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </section>
+        </section>
+
+        <section class="footer-base">
+          <div class="policy">
+            <h3>Privacy Policy | Terms of Use</h3>
+          </div>
+
+          <div class="copyright">
+            <h3></h3>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script type="module" src="../scripts/main.js"></script>
+
+    <script src="../scripts/formValidator.js"></script>
+  </body>
+</html>

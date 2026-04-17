@@ -1,5 +1,5 @@
 export default function preventReloadOnActiveFooterLink() {
-    const footerNav = document.querySelector(".footer-nav");
+    const footerNav = document.querySelector(".footer");
 
     footerNav.addEventListener("click", (e) => {
         if (e.target.closest("a.footer-link")) {
