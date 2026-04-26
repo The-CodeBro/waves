@@ -8,6 +8,7 @@ import {
 } from "./menu.js";
 import preventReloadOnActiveFooterLink from "./footer.js";
 import copyRightYear from "./utils/date.js";
+import { initForm } from "../scripts/formValidator.js";
 
 //mobile menu toggle and desktop nav view
 menuToggle(header);
@@ -25,6 +26,8 @@ window.addEventListener("resize", () => {
     desktopView();
   }
 });
+
+initForm();
 
 preventReloadOnActiveFooterLink();
 
