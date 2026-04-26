@@ -1,0 +1,27 @@
+.about-waves {
+    margin: 10rem auto;
+    /* margin-inline: 5rem; */
+    max-width: 920px;
+    /* margin: 10rem auto; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    border: 1px solid var(--purple-color--);
+    padding: 2rem 4rem;
+}
+
+.about-waves h3 {
+    color: var(--purple-color--);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: 2px underline solid var(--purple-color--);
+}
+
+article {
+    font-size: 1.6rem;
+    margin-block-start: 1rem;
+}
