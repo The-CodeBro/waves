@@ -10,12 +10,16 @@
   --primary-color--: #fff;
   --secondary-color--: #000;
   --purple-color--: #8447e9;
+  --purple-light--: #ede9fe;
+  --purple-dark--: #5b21b6;
+  --gray--: #494949;
   --brand-font--: "Zona Pro", sans-serif;
   --site-font--: "Montserrat", sans-serif;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
