@@ -10,6 +10,8 @@ const showFile = document.querySelector(".show-file");
 const errorMessage = document.querySelector(".error-message");
 
 export function initForm() {
+  if (!form || !fileUpload) return;
+
   form.addEventListener("keyup", (e) => {
     const name = nameInput.value.trim();
     const email = emailInput.value.trim();
