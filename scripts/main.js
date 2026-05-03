@@ -27,8 +27,10 @@ window.addEventListener("resize", () => {
   }
 });
 
+//form validation
 initForm();
 
+//Prevent footer link from reloading on current page
 preventReloadOnActiveFooterLink();
 
 //footer copyright year
