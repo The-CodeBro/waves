@@ -13,7 +13,7 @@ A modern, responsive web design agency website built with clean HTML, CSS, and v
 ## 📸 Preview
 
 > Add a screenshot of your homepage here after deployment.
-> Example: `![Waves Homepage](./assets/preview.png)`
+> `![Waves Homepage](images\preview\home-page.PNG)`
 
 ---
 
