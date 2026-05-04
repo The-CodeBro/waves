@@ -21,6 +21,7 @@ h2 {
 h2 span {
   position: relative;
   color: var(--purple-color--);
+  font-family: var(--brand-font--);
 }
 
 h2 img {
