@@ -1,137 +1,139 @@
 .our-services {
-    margin-inline: 15rem;
+  margin-inline: 5rem;
 }
 
 .first-container h3:first-of-type {
-    color: var(--purple-color--);
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin-block-start: 15rem;
+  color: var(--purple-color--);
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin-block-start: 15rem;
 }
 
 .first-container h3:last-of-type {
-    max-width: 530px;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    font-weight: 500;
-    margin-block-start: clamp(1.5rem, 4vw, 2rem);
+  max-width: 530px;
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  font-weight: 500;
+  margin-block-start: clamp(1.5rem, 4vw, 2rem);
 }
 
 .services-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
-    margin-block: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin-block: 10rem;
 }
 
 .services-flex section {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
-.services-flex section>div {
-    flex: 1;
+.services-flex section > div {
+  flex: 1;
 }
 
 .services-flex h3 {
-    color: var(--purple-color--);
-    font-size: 2rem;
-    font-weight: 500;
+  color: var(--purple-color--);
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .services-flex p {
-    max-width: 500px;
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-block: 2rem 1rem;
+  max-width: 500px;
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  font-weight: 400;
+  margin-block: 2rem 1rem;
 }
 
 .services-flex li {
-    color: var(--purple-color--);
-    font-size: 1.3rem;
-    font-weight: 500;
-    list-style-type: none;
+  color: var(--purple-color--);
+  font-size: 1.5rem;
+  font-weight: 500;
+  list-style-type: none;
 }
 
 .services-flex ul li::before {
-    content: "—";
-    margin-inline-end: 0.5rem;
+  content: "—";
+  margin-inline-end: 0.5rem;
 }
 
 .middle {
-    margin-block: 0.5rem;
+  margin-block: 0.5rem;
 }
 
 .service-flex {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .services-flex img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 @media (max-width: 568px) {
-    .first-container h3:first-of-type {
-        margin-block-start: 8rem !important;
-    }
-    .services-flex {
-        gap: 4rem;
-        margin-block: 2rem;
-    }
-    .services-flex img {
-        border-radius: 10px 10px 0px 0px;
-    }
-    .services-flex section {
-        flex-direction: column;
-        gap: 1rem;
-        border: 1px solid var(--purple-color--);
-        border-radius: 10px;
-        padding: 1rem;
-    }
-    .service-flex {
-        background-color: #fff;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        padding: 1rem;
-    }
-    .service,
-    .design {
-        flex-direction: column-reverse !important;
-    }
-    .services-flex p {
-        margin-block: 1rem;
-    }
-    .middle {
-        margin: 0;
-    }
-    .service-flex {
-        gap: 0rem !important;
-    }
+  .first-container h3:first-of-type {
+    margin-block-start: 8rem !important;
+  }
+  .services-flex {
+    gap: 4rem;
+    margin-block: 2rem;
+  }
+  .services-flex img {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .services-flex section {
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid var(--purple-color--);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  .service-flex {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  .service,
+  .design {
+    flex-direction: column-reverse !important;
+  }
+  .services-flex p {
+    margin-block: 1rem;
+  }
+  .middle {
+    margin: 0;
+  }
+  .service-flex {
+    gap: 0rem !important;
+  }
 }
 
 @media (max-width: 768px) {
-    .our-services {
-        margin-inline: 1rem;
-    }
-    .first-container h3:first-of-type {
-        margin-block-start: 10rem;
-    }
-    .service-flex {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+  .our-services {
+    margin-inline: 1rem;
+  }
+  .first-container h3:first-of-type {
+    margin-block-start: 10rem;
+  }
+  .service-flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 @media (min-width: 1400px) {
-    .our-services {
-        max-width: 1200px;
-        margin: auto;
-    }
-    .projects-wrapper {
-        margin-inline: 0;
-        padding-inline: 0;
-    }
+  .our-services {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .projects-wrapper {
+    margin-inline: 0;
+    padding-inline: 0;
+  }
 }
