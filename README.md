@@ -6,7 +6,7 @@ A modern, responsive web design agency website built with clean HTML, CSS, and v
 
 ## 🔗 Live Demo
 
-> Coming soon — will be updated after deployment.
+> https://waves-web.netlify.app/
 
 ---
 
