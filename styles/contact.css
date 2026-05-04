@@ -1,180 +1,177 @@
 .contact-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    margin-block: 10rem;
-    margin-inline-start: 13rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-block: 10rem;
+  margin-inline-start: 13rem;
 }
 
 .contact-flex h3 {
-    font-size: 3rem;
-    font-weight: 500;
-    max-width: 150px;
+  font-size: 3rem;
+  font-weight: 500;
+  max-width: 150px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
 .contact-flex p {
-    font-size: 1.6rem;
-    font-weight: 500;
-    max-width: 500px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  max-width: 500px;
 }
 
 span a {
-    color: var(--purple-color--);
-    text-decoration: none;
+  color: var(--purple-color--);
+  text-decoration: none;
 }
 
 input {
-    width: 350px;
-    font-size: 1.6rem;
-    font-weight: 500;
-    border: 0;
-    outline: none;
-    border-bottom: 1px solid var(--purple-color--);
-    caret-color: var(--purple-color--);
-    padding-block: 0.5rem;
-    padding-inline-start: 0.8rem;
-    padding-inline-end: 1.5rem;
+  width: 350px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid var(--purple-color--);
+  caret-color: var(--purple-color--);
+  padding-block: 0.5rem;
+  padding-inline-start: 0.8rem;
+  padding-inline-end: 1.5rem;
 }
 
 form div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 form div span {
-    display: block;
+  display: block;
 }
 
 .fa-circle-check,
 .fa-circle-xmark {
-    font-size: 1.3rem;
-    margin-inline-start: -1.5rem;
+  font-size: 1.3rem;
+  margin-inline-start: -1.5rem;
 }
 
 .fa-circle-check {
-    color: var(--purple-color--);
+  color: var(--purple-color--);
 }
 
 .fa-circle-xmark {
-    color: red;
+  color: red;
 }
 
 .custom-upload {
-    font-size: 1.6rem;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
 }
 
 .custom-upload img {
-    width: 140px;
-    position: absolute;
-    bottom: -0.4rem;
+  width: 140px;
+  position: absolute;
+  bottom: -0.4rem;
 }
 
 .custom-upload::after {
-    content: "Upload file";
-    background-color: var(--purple-color--);
-    color: var(--primary-color--);
-    font-weight: 400;
-    font-size: 1.6rem;
-    position: absolute;
-    right: -12rem;
-    bottom: -2rem;
-    padding: 0.5rem 1rem;
-    opacity: 0;
+  content: "Upload file";
+  background-color: var(--purple-color--);
+  color: var(--primary-color--);
+  font-weight: 400;
+  font-size: 1.6rem;
+  position: absolute;
+  right: -12rem;
+  bottom: -2rem;
+  padding: 0.5rem 1rem;
+  opacity: 0;
 }
 
 .custom-upload:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 form button {
-    font-size: 1.6rem;
-    font-weight: 500;
-    border: 0;
-    background-color: var(--purple-color--);
-    color: var(--primary-color--);
-    padding: 1rem 1.5rem;
-    margin-block-start: 2rem;
-    cursor: pointer;
-    transition: opacity 3ms ease-in-out;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 0;
+  background-color: var(--purple-color--);
+  color: var(--primary-color--);
+  padding: 1rem 1.5rem;
+  margin-block-start: 2rem;
+  cursor: pointer;
+  transition: opacity 3ms ease-in-out;
 }
 
 form button:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 form button:active {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .error-message,
 .file-error {
-    color: #ff0000;
+  color: #ff0000;
 }
 
 .show-file p {
-    width: 350px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-wrap: nowrap;
-    color: var(--purple-color--);
-    padding-inline-end: 1rem;
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  color: var(--purple-color--);
+  padding-inline-end: 1rem;
 }
 
 @media (max-width: 568px) {
-    .contact-flex {
-        margin-inline: 1rem;
-    }
-    .contact-flex h3 {
-        font-size: 2rem;
-    }
-    input,
-    .show-file p {
-        width: 300px;
-    }
+  .contact-flex {
+    margin-inline: 1rem;
+  }
+  .contact-flex h3 {
+    font-size: 2rem;
+  }
+  input,
+  .show-file p {
+    width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
-    .contact-flex {
-        align-items: center;
-        gap: 2rem;
-        margin-inline-start: 0rem;
-        margin-block-end: 15rem;
-    }
-    .contact-flex h3,
-    .contact-flex p {
-        text-align: center;
-    }
-    form {
-        gap: 1.5rem;
-    }
-    .show-file p {
-        text-align: left !important;
-    }
-    .custom-upload:hover::after {
-        opacity: 0;
-    }
-    form button {
-        align-self: center;
-        margin-block-start: 1rem;
-    }
+  .contact-flex {
+    align-items: center;
+    gap: 2rem;
+    margin-inline-start: 0rem;
+    margin-block-end: 15rem;
+  }
+  .contact-flex h3,
+  .contact-flex p {
+    text-align: center;
+  }
+  form {
+    gap: 1.5rem;
+  }
+  .show-file p {
+    text-align: left !important;
+  }
+  .custom-upload:hover::after {
+    opacity: 0;
+  }
+  form button {
+    align-self: center;
+    margin-block-start: 1rem;
+  }
 }
 
 @media (min-width: 1400px) {
-    .contact {
-        max-width: 1200px;
-        margin: auto;
-    }
-    /* .contact-flex {
-        margin-inline-start: 5rem;
-    } */
+  .contact {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
