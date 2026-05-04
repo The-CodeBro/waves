@@ -108,7 +108,7 @@ To run this project locally:
 1. **Clone or download** the repository
 
    ```bash
-   git clone https://github.com/yourusername/waves.git
+   git clone https://github.com/The-CodeBro/waves.git
    ```
 
 2. **Open in VS Code**
