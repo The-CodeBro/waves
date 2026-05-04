@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 4rem;
   margin-block: 10rem;
-  margin-inline-start: 13rem;
+  margin-inline: 5rem;
 }
 
 .contact-flex h3 {
@@ -41,6 +41,11 @@ input {
   padding-block: 0.5rem;
   padding-inline-start: 0.8rem;
   padding-inline-end: 1.5rem;
+}
+
+input::placeholder {
+  font-weight: 500;
+  color: var(--divider-color--);
 }
 
 form div {
@@ -97,7 +102,7 @@ form div span {
 }
 
 form button {
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 4vw, 1.8rem);
   font-weight: 500;
   border: 0;
   background-color: var(--purple-color--);
@@ -131,9 +136,9 @@ form button:active {
 }
 
 @media (max-width: 568px) {
-  .contact-flex {
+  /* .contact-flex  {
     margin-inline: 1rem;
-  }
+  } */
   .contact-flex h3 {
     font-size: 2rem;
   }
@@ -147,7 +152,7 @@ form button:active {
   .contact-flex {
     align-items: center;
     gap: 2rem;
-    margin-inline-start: 0rem;
+    margin-inline: 1rem;
     margin-block-end: 15rem;
   }
   .contact-flex h3,
