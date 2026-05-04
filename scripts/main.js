@@ -22,6 +22,7 @@ mobileNavView();
 window.addEventListener("resize", () => {
   if (window.innerWidth <= 768) {
     mobileNavView();
+    indicateActivePage(navlinks);
   } else {
     desktopView();
   }

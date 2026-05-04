@@ -96,6 +96,11 @@ h1 {
   border-bottom: 2px solid var(--purple-color--);
 }
 
+.nav-link.active.contact-link {
+  color: var(--primary-color--);
+  border-bottom: 2px solid var(--primary-color--);
+}
+
 @media (max-width: 768px) {
   header {
     padding: 1rem;
