@@ -113,7 +113,7 @@ main {
 }
 
 .email-notice p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--secondary-color-);
   line-height: 1.65;
 }
@@ -176,8 +176,6 @@ main {
   opacity: 0.7;
 }
 
-/* Decorative wave */
-
 .wave-deco {
   position: fixed;
   right: -60px;
@@ -198,8 +196,6 @@ main {
     transform: translateY(0);
   }
 }
-
-/* Tablet (max 768px) */
 
 @media (max-width: 768px) {
   .nav-links {
@@ -230,8 +226,6 @@ main {
   }
 }
 
-/* Mobile (max 480px) */
-
 @media (max-width: 480px) {
   .headline {
     line-height: 1.15;
@@ -244,22 +238,6 @@ main {
     margin-top: 0;
   }
 }
-
-/* Very small (max 360px) */
-
-@media (max-width: 360px) {
-  .logo {
-    font-size: 1.1rem;
-  }
-  .headline {
-    font-size: 1.55rem;
-  }
-  .body-text {
-    font-size: 0.85rem;
-  }
-}
-
-/* Large screens (min 1440px) */
 
 @media (min-width: 1440px) {
   main {
